@@ -9,4 +9,11 @@ resource "azurerm_network_interface" "dummy-nic-ip-reservation" {
     private_ip_address_allocation = var.private_ip_address_allocation
     private_ip_address            = var.private_ip_address
   }
+
+  tags = {
+    BusinessApplication = var.biz_application
+    ApplicationService = var.application_service
+    CostCenter = var.costcester
+    CreatedOnDate = var.creationdate
+  }
 }
