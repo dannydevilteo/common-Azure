@@ -1,6 +1,0 @@
-provider.tf
-.hcl
-.swp
-.terraform
-.gitignore
-.terraform.lock.hcl
