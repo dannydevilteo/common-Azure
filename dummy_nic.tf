@@ -7,5 +7,6 @@ resource "azurerm_network_interface" "dummy-nic-ip-reservation" {
     name                          = format("private-", var.nic_name)
     subnet_id                     = var.subnet_id
     private_ip_address_allocation = var.private_ip_address_allocation
+    private_ip_address            = var.private_ip_address
   }
 }
