@@ -1,6 +1,6 @@
 resource "azurerm_network_interface" "dummy-nic-ip-reservation" {
   name                = var.nic_name
-  location            = var.sea
+  location            = var.location
   resource_group_name = var.rg_name
 
   ip_configuration {
