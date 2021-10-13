@@ -7,6 +7,6 @@ variable "biz_application" {}
 variable "application_service" {}
 variable "costcester" {}
 variable "creationdate" {}
-variables "subnet_name" {}
-variables "vnet_name" {}
-variables "rg_name" {}
+variable "subnet_name" {}
+variable "vnet_name" {}
+variable "rg_name" {}
