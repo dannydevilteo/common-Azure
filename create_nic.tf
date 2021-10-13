@@ -19,7 +19,7 @@ resource "azurerm_network_interface" "dummy-nic-ip-reservation" {
 }
 
 data "azurerm_subnet" "subnetdata" {
-  name                 = "${var.subnet_name}"
-  virtual_network_name = "${var.vnet_name}"
+  name                 = "${var.subnet_name.rendered}"
+  virtual_network_name = "${var.vnet_name.rendered}"
   resource_group_name  = "${var.rg_name}"
 }
